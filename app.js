@@ -92,7 +92,7 @@ passport.use(new GoogleStrategy({
 passport.use(new FacebookStrategy({
     clientID: process.env.FACEBOOK_ID,
     clientSecret: process.env.FACEBOOK_SECRET,
-    callbackURL: "http://localhost:3000/auth/facebook/secrets",
+    callbackURL: "https://fierce-hamlet-64012.herokuapp.com/auth/facebook/secrets",
      profileFields: ['email','gender','profileUrl','displayName']
   },
   function(accessToken, refreshToken, profile, done) {
